@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="customers.component.css">
+<table *ngIf="customers" class="table">
+    <tr> 
+    <th>name</th>
+    <th>surname</th>
+    <th>dateOfBirth</th>
+    <th>gender</th>
+    <th>phoneNumber</th>
+    <th>adress</th></tr>
+
+<tr *ngFor = "let customer of customers">
+   <td>{{customer.name}}</td>
+   <td>{{customer.surname}}</td>
+   <td>{{customer.dateOfBirth}}</td>
+   <td>{{customer.gender}}</td>
+   <td>{{customer.phoneNumber}}</td>
+   <td>{{customer.adress}}</td>
+</tr>
+</table>
